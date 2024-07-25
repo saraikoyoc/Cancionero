@@ -1,0 +1,131 @@
+/* estilo.css */
+
+/* Definición de la clase para Montserrat */
+.montserrat-normal {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Peso normal (regular) */
+    font-style: normal;
+}
+
+.montserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700; /* Peso en negritas (bold) */
+    font-style: normal;
+}
+
+/* Estilos para el resto del documento */
+body {
+    background-color: #a5a5eb; /* Color lila */
+    font-family: "Montserrat", sans-serif; /* Aplicar Montserrat como fuente principal */
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.header {
+    color: #f8f5f8;
+    background-color: #876bbb; /* Color morado */
+    height: 50px;
+    text-align: center;
+}
+
+.menu-songs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-songs li {
+    margin: 10px 0;
+}
+
+.menu-songs a {
+    display: block;
+    padding: 10px;
+    background-color: #876bbb; /* Color del botón */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+  
+}
+
+.menu-songs a:hover {
+    background-color:#6e39af; /* Color al pasar el mouse */
+}
+
+.ad-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ad-images img {
+    width: 300px; /* Ancho del anuncio */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 5px;
+}
+
+.table-header, .table-footer {
+    background-color: #876bbb; /* Color morado */
+    color: #f7f6f8;
+    height: 50px;
+    text-align: center;
+}
+
+.table-content {
+    background-color: #fafafa; /* Fondo lila solo para el contenido de la tabla */
+    height: 300px;
+}
+
+.song-list-cell {
+    width: 40%;
+    vertical-align: top;
+}
+
+.image-cell {
+    width: 60%;
+    text-align: center;
+}
+
+/* Establecer el último cuadro de color #876bbb */
+.table-footer {
+    background-color: #876bbb;
+    color: #f7f6f8;
+}
+
+/* Establecer "Cancionero" en negritas usando la clase montserrat-bold */
+.menu-songs a {
+    font-weight: bold;
+}
+
+/* Aplicar Montserrat-Bold para "Cancionero" */
+.menu-songs .montserrat-bold {
+    font-weight: 700;
+}
+
+/* Aplicar Montserrat-Normal para otros elementos que requieran Montserrat regular */
+body, .header, .menu-songs a {
+    font-weight: normal;
+}
+
+/* Estilo para el botón de regresar */
+.back-button {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: #1551a1;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}

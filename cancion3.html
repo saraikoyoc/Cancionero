@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancionero</title>
+    <style>
+        body {
+            background-color: #a6a6f7; /* Fondo lila */
+            margin: 0; /* Elimina márgenes por defecto */
+            padding: 0; /* Elimina rellenos por defecto */
+            font-family: Montserrat, sans-serif; /* Fuente Montserrat */
+        }
+        table {
+            width: 80%;
+            margin: 0 auto; /* Centra la tabla horizontalmente */
+            background-color: #ac73db; /* Color de fondo lila */
+            border-collapse: collapse; /* Fusiona los bordes de las celdas */
+        }
+        table, th, td {
+            text-align: left; /* Alineación del texto a la izquierda */
+            vertical-align: top; /* Alineación vertical arriba */
+        }
+        header {
+            color: #fff; /* Color de texto blanco */
+            text-align: center; /* Alineación del texto al centro */
+            padding: 10px; /* Añade relleno al encabezado */
+            background-color: #876bbb; /* Fondo lila */
+        }
+        nav {
+            text-align: center; /* Alineación del texto al centro */
+            background-color: #592cac; /* Color morado */
+            padding: 10px; /* Añade relleno a la lista de canciones */
+            box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+        }
+        nav b {
+            display: block; /* Hace que el texto del título de la lista sea bloque para ocupar el ancho */
+            color: #fff; /* Color de texto blanco para el título */
+            margin-bottom: 10px; /* Espacio inferior entre el título y la lista */
+        }
+        .menu-songs {
+            list-style-type: none; /* Elimina los puntos de la lista */
+            padding: 0; /* Elimina relleno */
+            margin: 0; /* Elimina márgenes */
+        }
+        .menu-songs li {
+            margin-bottom: 10px; /* Espacio entre elementos de la lista */
+        }
+        .menu-songs a {
+            display: block; /* Hace que los enlaces sean bloques para ocupar todo el ancho */
+            background-color: #876bbb; /* Color del botón */
+            color: #fff; /* Color de texto blanco */
+            padding: 10px 15px; /* Relleno de los botones */
+            text-decoration: none; /* Elimina subrayado de los enlaces */
+            border-radius: 5px; /* Bordes redondeados */
+            transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+        }
+        .menu-songs a:hover {
+            background-color: #6e39af; /* Color al pasar el mouse */
+        }
+        .left-cell {
+            background-color: #f6f6f7; /* Fondo azul */
+        }
+        aside {
+            text-align: center; /* Alineación del texto al centro */
+            padding: 10px; /* Añade relleno a los anuncios */
+        }
+        aside img {
+            display: block; /* Hace que las imágenes sean bloques para ajustarse al contenedor */
+            margin: 10px auto; /* Centra las imágenes horizontalmente dentro del contenedor */
+            max-width: 100%; /* Ajusta el ancho máximo de las imágenes al contenedor */
+            height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+        }
+        footer {
+            clear: both; /* Limpia los flotadores anteriores */
+            text-align: center; /* Alineación del texto al centro */
+            padding: 10px; /* Añade relleno al pie de página */
+            background-color: #876bbb; /* Fondo lila */
+            color: #fff; /* Color de texto blanco */
+        }
+        .song-lyrics {
+            text-align: center; /* Centra el texto de la letra de la canción */
+        }
+        .btn-regresar {
+            display: block; /* Hace que el enlace sea un bloque */
+            background-color: #592cac; /* Color morado */
+            color: #fff; /* Color de texto blanco */
+            padding: 10px 15px; /* Relleno del botón */
+            text-decoration: none; /* Elimina subrayado del enlace */
+            border-radius: 5px; /* Bordes redondeados */
+            text-align: center; /* Centra el texto dentro del botón */
+            width: fit-content; /* Ajusta el ancho al contenido */
+            margin: 0 auto; /* Centra el botón horizontalmente */
+            transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+        }
+        .btn-regresar:hover {
+            background-color: #6e39af; /* Color al pasar el mouse */
+        }
+        .content-cell {
+            text-align: center; /* Centra el contenido horizontalmente */
+        }
+        .content-cell img {
+            display: block; /* Hace que la imagen sea un bloque */
+            margin: 0 auto; /* Centra la imagen horizontalmente */
+        }
+        .content-cell audio, .content-cell .song-lyrics {
+            margin: 10px 0; /* Añade margen arriba y abajo */
+        }
+        .social-icons {
+            display: inline-block; /* Hace que los íconos se alineen en línea */
+            vertical-align: middle; /* Alinea los íconos verticalmente en el medio */
+        }
+        .social-icons img {
+            width: 60px; /* Ancho de las imágenes */
+            height: 60px; /* Altura de las imágenes */
+            margin-left: 5px; /* Espacio entre las imágenes */
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <table>
+            <tr>
+                <td colspan="3">
+                    <header>
+                        <h1>Cancionero</h1>
+                    </header>
+                </td>
+            </tr>
+            <tr>
+                <td class="left-cell">
+                    <nav>
+                        <b>Lista de canciones</b>
+                        <ul class="menu-songs">
+                            <li><a href="cancion1.html">BTS DNA</a></li>
+                            <li><a href="cancion2.html">Like Crazy Jimin de BTS</a></li>
+                            <li><a href="cancion3.html">Este Cementerio no es Serio de Mecano</a></li>
+                            <li><a href="cancion4.html">Espresso de Sabrina Carpenter</a></li>
+                            <li><a href="cancion5.html">Cruz de Navajas de Mecano</a></li>
+                        </ul>
+                    </nav>
+                    <aside>
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pizza-design-template-85c319c6000c505fa60b032f336894f4_screen.jpg?ts=1595987951" alt="anuncio" width="300" height="300">  
+                        <img src="https://www.inboundcycle.com/hs-fs/hubfs/anuncios publicitarios persuasivos.jpg?width=1200&height=628&name=anuncios%20publicitarios%20persuasivos.jpg" alt="anuncio" width="300" height="300">  
+                        <img src="https://media.informabtl.com/wp-content/uploads/2020/04/2ee93aa2-burger-king-768x421.jpg" alt="anuncio" width="300" height="300">   
+                    </aside>
+                </td>
+                <td colspan="2" class="content-cell">
+                    <p>
+                        <img src="https://eloctavohistoriador.com/wp-content/uploads/2020/08/mecano-3.jpg?w=768" alt="bts en grupo" width="400" height="300">
+                    </p>
+                    <audio controls>
+                        <source src="Canciones/cancion3.mp3" type="audio/mp3">
+                    </audio>
+                    <br>
+                    <b><p class="song-lyrics">Este Cementerio no es Serio - Mecano</p></b>
+                    <p class="song-lyrics">
+                        Colgado del cielo<br>
+                        Por doce cipreses<br>
+                        Doce apóstoles de verde<br>
+                        Velan doce meses<br>
+                        A la tapia en ruinas<br>
+                        Que lo delimita<br>
+                        Le han quitado algunas piedras<br>
+                        para hacer la Ermita<br>
+                        <br>
+                        Tiene mi cementerio una fosa común<br>
+                        Donde estamos los héroes de Cuba<br>
+                        Los domingos los negros no dejan dormir<br>
+                        Pues les da por cantar misa luba<br>
+                        Y los muertos aquí lo pasamos muy bien<br>
+                        Entre flores de colores<br>
+                        Y los viernes y tal<br>
+                        Si en la fosa no hay plan<br>
+                        Nos vestimos y salimos<br>
+                        Para dar una vuelta<br>
+                        Sin pasar de la tapia<br>
+                        <br>
+                        Este cementerio no es serio<br>
+                        Este cementerio no es serio<br>
+                        Este cementerio no es serio<br>
+                        Este cementerio no es serio<br>
+                        <br>
+                        Tiene un portero búlgaro<br>
+                        Que pone las lapidas<br>
+                        Y una viuda que visita<br>
+                        Tres veces a un marido<br>
+                        La mitad de los presentes<br>
+                        Son víctimas de la influenza<br>
+                        Pero es que el agua que hay en la fuente<br>
+                        No es agua es ginebra<br>
+                        <br>
+                        Los domingos los negros no dejan dormir<br>
+                        Pues les da por cantar misa luba<br>
+                        Y los muertos aquí lo pasamos muy bien<br>
+                        Entre flores de colores<br>
+                        Y los viernes y tal<br>
+                        Si en la fosa no hay plan<br>
+                        Nos vestimos y salimos<br>
+                        Para dar una vuelta<br>
+                        Sin pasar de la tapia<br>
+                        <br>
+                        Este cementerio no es serio<br>
+                        Este cementerio no es serio<br>
+                        Este cementerio no es serio<br>
+                        Este cementerio no es serio<br>
+                        <br>
+                        Y en verano y en invierno<br>
+                        En verano y en invierno<br>
+                        Pues los muertos aquí lo pasamos muy bien<br>
+                        Entre flores de colores<br>
+                        Y los viernes y tal<br>
+                        Si en la fosa no hay plan<br>
+                        Nos vestimos y salimos<br>
+                        Para dar una vuelta<br>
+                        Sin pasar de la tapia<br>
+                        <br>
+                        Este cementerio no es serio<br>
+                        Este cementerio no es serio<br>
+                        Este cementerio no es serio<br>
+                        Este cementerio no es serio<br>
+                    </p>
+                    <br>
+                    <a href="index.html" class="btn-regresar">Regresar</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <footer>
+                        Derechos Reservados a sarai koyoc pat- Mérida, Yucatán
+                        <span class="social-icons">
+                            <img src="https://static.vecteezy.com/system/resources/previews/016/716/486/non_2x/twitter-icon-free-png.png" alt="Twitter">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram">
+                            <img src="https://cdn-icons-png.freepik.com/512/4096/4096116.png" alt="YouTube">
+                        </span>
+                    </footer>
+                </td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
